@@ -197,3 +197,4 @@ Public, or connect Tableau directly to `business_finance_dataset_clean.csv`.
 
 This project uses a synthetic dataset created for portfolio/educational
 purposes. Feel free to fork, adapt, and reuse.
+# retail-finance-analysis
