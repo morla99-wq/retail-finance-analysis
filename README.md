@@ -5,7 +5,7 @@
 ![Tableau](https://img.shields.io/badge/Tableau-Dashboard-E97627?logo=tableau&logoColor=white)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 
-A beginner-friendly end-to-end data analytics project — **data cleaning, SQL
+End-to-end data analytics project — **data cleaning, SQL
 analysis, Python exploration, and a Tableau dashboard** — built on a synthetic
 retail finance dataset for a fictional 6-store chain, **GreenLeaf Retail Co.**
 
@@ -81,7 +81,7 @@ retail-finance-analysis/
 │   ├── monthly_revenue_trend.png
 │   └── store_margin_ranking.png
 └── tableau/
-    └── retail_finance_dashboard.twbx        # Tableau workbook (add your own)
+    └── retail_finance_dashboard.twbx        # Tableau workbook 
 ```
 
 ---
@@ -105,7 +105,7 @@ pip install pandas matplotlib
 
 ### 2. Run the Python analysis
 ```bash
-python python_analysis.py
+python rfp_analysis.py
 ```
 This cleans the raw CSV, prints answers to the cleaning/trend questions, and
 saves `business_finance_dataset_clean.csv` plus two charts.
@@ -116,12 +116,12 @@ psql -U <your_user> -d <your_database>
 ```
 Then inside `psql`:
 ```sql
-\i postgres_queries.sql
+\i rfp_analysis.sql
 ```
 (Uncomment the `\copy` command in the file first and point it at your CSV path.)
 
 ### 4. Open the Tableau dashboard
-Open `tableau/retail_finance_dashboard.twbx` in Tableau Desktop or Tableau
+Open `tableau/GreenLeaf.twbx` in Tableau Desktop or Tableau
 Public, or connect Tableau directly to `business_finance_dataset_clean.csv`.
 
 ---
@@ -172,10 +172,6 @@ Public, or connect Tableau directly to `business_finance_dataset_clean.csv`.
 
 ## 💡 Key Insights
 
-> _Fill this in after you run your analysis — this section is what reviewers
-> read first. Aim for 3-5 bullets framed as business takeaways, not just
-> stats._
-
 - e.g. *"Holiday months (Nov–Dec) drive ~60% more revenue than the yearly
   average — staffing and inventory should scale accordingly."*
 - e.g. *"Groceries has the lowest margin (~10%) across every store; Beauty is
@@ -188,8 +184,8 @@ Public, or connect Tableau directly to `business_finance_dataset_clean.csv`.
 
 ## 🖼️ Dashboard Preview
 
-> _Add a screenshot or GIF of your Tableau dashboard here once it's built:_
-> `![Dashboard](./tableau/dashboard_preview.png)`
+<img width="1200" height="800" alt="GreenLeaf Retail Co - Executive Performance Dashboard" src="https://github.com/user-attachments/assets/2b52cf18-5aa0-45f0-8ac2-45a4ad0514ea" />
+
 
 ---
 
